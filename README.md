@@ -71,12 +71,12 @@ See [notebook.ipynb](https://github.com/mar1-k/chess_elo_prediction/blob/main/no
 - streamlit
 - Docker
 - Google Cloud Platform
-
+- GitLFS
 ```
 
 ### Environment Setup
 
-1. Clone the repo and make and navigate into it
+1. Clone the repo and make and navigate into it - Ensure that you have installed git LFS otherwise the csv will have to be downloaded manually
 ```
 git clone https://github.com/mar1-k/chess_elo_prediction.git
 cd chess_elo_prediction
@@ -132,6 +132,8 @@ chess_elo_prediction/
 ```
 
 ## Usage Instructions
+
+Ensure that you have installed git LFS otherwise the csv will have to be downloaded manually
 
 ### Running the notebook
 1. Ensure the dataset `rapid_only_games_metadata_profile_2024_01.csv` is in the `data/` directory
