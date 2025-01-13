@@ -6,7 +6,7 @@ Access the live demo at https://predict-chess-elo-streamlit-frontend-zsmu2mtvwa-
 
 This project implements a machine learning solution to predict the ELO ratings of both White and Black players in chess games based on their gameplay statistics and performance metrics. The model analyzes various aspects of a chess game, including player experience, game duration, move quality, and decision-making patterns to estimate players' skill levels (ELO ratings).
 
-### Why This Matters
+### Why This Is Useful
 - **Player Skill Assessment**: Helps evaluate a player's true skill level based on their gameplay patterns rather than just win/loss records
 - **Performance Analysis**: Provides insights into how different aspects of gameplay correlate with player ratings
 - **Skill Development**: Can be used to track progress and identify areas for improvement in a player's game
