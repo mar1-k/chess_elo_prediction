@@ -97,6 +97,17 @@ pipenv install
 pipenv shell
 ```
 
+5. Get the environment name so that you may install it via ipykernel:
+```
+pipenv --venv
+```
+
+5. Install the pipenv environment to ipykernel so that it may be used with the notebook - you need the output of step 5 for the name (example: chess_elo_prediction-main-eZII8GvJ)
+```
+python -m ipykernel install --user --name=<YOUR-virtualenv-name->
+```
+
+
 ## Project Structure
 
 ```
@@ -137,11 +148,12 @@ chess_elo_prediction/
 
 ### Running the notebook
 1. Ensure the dataset `rapid_only_games_metadata_profile_2024_01.csv` is in the `data/` directory and is not just a Git LFS placeholder file
-2. Open and run notebook.ipynb - ensure that you have installed all dependencies from environment setup
+2. Inside the notebook ensure that you select the kernel associated with the pipenv installations
+3. Open and run notebook.ipynb - ensure that you have installed all dependencies from environment setup
 ```
 jupyter notebook notebook.ipynb
 ```
-3. Run the notebook
+4. Run the notebook
 
 ### Training the Model
 
