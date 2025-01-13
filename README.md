@@ -131,12 +131,12 @@ chess_elo_prediction/
 └── train.py
 ```
 
-## Usage Instructions
+## Usage and Evaluation Instructions
 
-Ensure that you have installed git LFS otherwise the csv will have to be downloaded manually
+*Please Ensure that you have installed git LFS before cloning otherwise the csv will have to be downloaded manually*
 
 ### Running the notebook
-1. Ensure the dataset `rapid_only_games_metadata_profile_2024_01.csv` is in the `data/` directory
+1. Ensure the dataset `rapid_only_games_metadata_profile_2024_01.csv` is in the `data/` directory and is not just a Git LFS placeholder file
 2. Open and run notebook.ipynb - ensure that you have installed all dependencies from environment setup
 ```
 jupyter notebook notebook.ipynb
