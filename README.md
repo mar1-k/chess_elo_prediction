@@ -1,10 +1,10 @@
-# Chess ELO Rating Predictor
+# Chess Elo Rating Predictor
 
 Access the live demo at https://predict-chess-elo-streamlit-frontend-zsmu2mtvwa-uc.a.run.app
 
 ## Problem Description
 
-This project implements a machine learning solution to predict the ELO ratings of both White and Black players in chess games based on their gameplay statistics and performance metrics. The model analyzes various aspects of a chess game, including player experience, game duration, move quality, and decision-making patterns to estimate players' skill levels (ELO ratings).
+This project implements a machine learning solution to predict the Elo ratings of both White and Black players in chess games based on their gameplay statistics and performance metrics. The model analyzes various aspects of a chess game, including player experience, game duration, move quality, and decision-making patterns to estimate players' skill levels (Elo ratings).
 
 ### Why This Is Useful
 - **Player Skill Assessment**: Helps evaluate a player's true skill level based on their gameplay patterns rather than just win/loss records
@@ -32,13 +32,13 @@ The project uses a filtered subset of the [Lichess Games Dataset](https://www.ka
 
 The final implementation uses XGBoost with the following configurations:
 
-### White ELO Model
+### White Elo Model
 - Learning rate: 0.1
 - Max depth: 3
 - Subsample: 0.9
 - Colsample_bytree: 0.9
 
-### Black ELO Model
+### Black Elo Model
 - Learning rate: 0.3
 - Max depth: 3
 - Subsample: 0.9
@@ -49,7 +49,7 @@ The final implementation uses XGBoost with the following configurations:
 
 The project evaluated several machine learning models and configuration, with XGBoost showing the best performance:
 
-| Model | White ELO RMSE | Black ELO RMSE |
+| Model | White Elo RMSE | Black Elo RMSE |
 |-------|---------------|----------------|
 | Linear Regression | 323.11 | 326.59 |
 | Decision Tree | 296.58 | 297.53 |
