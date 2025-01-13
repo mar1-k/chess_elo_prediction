@@ -9,6 +9,8 @@ matplotlip = "*"
 seaborn = "*"
 scikit-learn = "*"
 xgboost = "*"
+ipykernel = "*"
+notebook = "*"
 
 [dev-packages]
 
