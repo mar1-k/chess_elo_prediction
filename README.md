@@ -27,18 +27,6 @@ The project uses a filtered subset of the [Lichess Games Dataset](https://www.ka
   - Number of blunders
   - Number of mistakes
 
-## Model Performance
-
-The project evaluated several machine learning models and configuration, with XGBoost showing the best performance:
-
-| Model | White ELO RMSE | Black ELO RMSE |
-|-------|---------------|----------------|
-| Linear Regression | 323.11 | 326.59 |
-| Decision Tree | 296.58 | 297.53 |
-| Random Forest | 290.07 | 291.90 |
-| XGBoost | 287.89 | 290.71 |
-
-See notebook.ipynb for full analysis
 
 ## Model Details
 
@@ -55,6 +43,20 @@ The final implementation uses XGBoost with the following configurations:
 - Max depth: 3
 - Subsample: 0.9
 - Colsample_bytree: 0.9
+
+
+## Model Performance
+
+The project evaluated several machine learning models and configuration, with XGBoost showing the best performance:
+
+| Model | White ELO RMSE | Black ELO RMSE |
+|-------|---------------|----------------|
+| Linear Regression | 323.11 | 326.59 |
+| Decision Tree | 296.58 | 297.53 |
+| Random Forest | 290.07 | 291.90 |
+| XGBoost | 287.89 | 290.71 |
+
+See notebook.ipynb for full analysis
 
 
 ### Technology and Libraries Used
