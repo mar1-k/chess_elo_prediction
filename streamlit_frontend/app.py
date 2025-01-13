@@ -1,6 +1,7 @@
 import streamlit as st
 import requests
 import json
+import os
 import numpy as np
 
 # Sample generated game data
@@ -218,8 +219,10 @@ def main():
             validated_features = validate_input(game_data["features"])
             
             # Prepare request
+            predict_api_url = os.environ.get('PREDICTION_SERVICE_URL', 'http://host.docker.internal:8000') #This is changed to a service URL in cloud deployment via this env variable, otherwise default to docker
+            predict_api_url = predict_api_url + '/predict'
             response = requests.post(
-                "http://host.docker.internal:8000/predict", #This is changed to a service URL in cloud deployment
+                predict_api_url,
                 json={"features": validated_features},
                 timeout=5
             )

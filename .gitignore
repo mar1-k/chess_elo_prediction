@@ -1,3 +1,9 @@
 
 data/games_metadata_profile_2024_01.csv
 .DS_Store
+deployment/terraform/terraform.tfstate
+deployment/terraform/terraform.tfstate.backup
+deployment/terraform/.terraform/providers/registry.terraform.io/hashicorp/google/6.15.0/darwin_amd64/terraform-provider-google_v6.15.0_x5
+deployment/terraform/.terraform.lock.hcl
+deployment/terraform/.terraform/providers/registry.terraform.io/hashicorp/google/6.15.0/darwin_amd64/LICENSE.txt
+deployment/terraform/.terraform.tfstate.lock.info
