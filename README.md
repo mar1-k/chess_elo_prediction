@@ -207,13 +207,30 @@ https://console.developers.google.com/apis/api/vpcaccess.googleapis.com
 5. Setup Terraform Variables file 
 - Navigate to the Terraform folder of this project and ensure that the Terraform variables file `variables.tf` has the correct project name and GCP key file path information
 
-6. Terraform init and apply
+6. Push Docker containers to GCR
+```
+gcloud config set project <YOUR PROJECT NAME>
+gcloud auth login
+gcloud auth configure-docker
+
+#In the /predict_api directory
+docker build -t chess-elo-predictor .
+docker tag chess-elo-predictor:latest gcr.io/chess-elo-prediction/elo-prediction-api:latest
+docker push gcr.io/chess-elo-prediction/elo-prediction-api:latest
+
+#In the /streamlit_frontend directory
+docker build -t chess-elo-frontend . 
+docker tag chess-elo-frontend:latest gcr.io/chess-elo-prediction/predict-chess-elo-streamlit-frontend:latest
+docker push gcr.io/chess-elo-prediction/predict-chess-elo-streamlit-frontend:latest
+```
+
+7. Terraform init and apply
 - While in the Terraform folder of this project run `terraform init` and then `terraform apply`
 - Review the Terraform plan and type `yes` if everything looks good, you should see `Plan: 18 to add, 0 to change, 0 to destroy.
 
-7. Navigate to the frontend url provided by Terraform
+8. Navigate to the frontend url provided by Terraform
 
-8. Enjoy your deployment! Don't forget to `terraform destroy` when done
+9. Enjoy your deployment! Don't forget to `terraform destroy` when done
 
 ## Acknowledgments
 
