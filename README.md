@@ -56,7 +56,7 @@ The project evaluated several machine learning models and configuration, with XG
 | Random Forest | 290.07 | 291.90 |
 | XGBoost | 287.89 | 290.71 |
 
-See notebook.ipynb for full analysis
+See [notebook.ipynb](https://github.com/mar1-k/chess_elo_prediction/blob/main/notebook.ipynb) for full analysis
 
 
 ### Technology and Libraries Used
